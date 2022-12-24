@@ -22,11 +22,16 @@ public class UsoEmpleado {
         */
 
         //Lo mismo pero con un array
-        Empleado[] empleados = new Empleado[3];
+        Empleado[] empleados = new Empleado[4];
 
         empleados[0] = new Empleado("Jotaeme", 1250, 2018,10,27);
         empleados [1] = new Empleado("Paco Pepe", 1750, 2015,1,31);
         empleados [2] = new Empleado("Federico", 2250, 2010,6,14);
+        empleados [3] = new Empleado("Pepe Pérez");
+
+        empleados[0].aumentarSueldo(15);
+        empleados [1].aumentarSueldo(10);
+        empleados [2].aumentarSueldo(5);
 
         for (int i = 0; i < empleados.length; i++) {
             System.out.println("\nNombre: " + empleados[i].dimeNombre() + "\nSueldo: " + empleados[i].dimeSueldo() + "\nFecha de alta: " + empleados[i].dimeAlta());
@@ -52,6 +57,13 @@ class Empleado{
         altaContrato = calendario.getTime();
     }
 
+
+    //Implemenatamos la sobrecarga en el constructor, ya que no debe por que saberse los demás datos que se pasan por parámetro
+    //Para ello usaremos this, ya que lo usaremos para poner por "defecto", los atributos que no sepamos de los Objetos, dicho 
+    //this llama al otro constructor de la clase, si hubiese más iría a aquel que tenga los mismos parámetros
+    public Empleado(String nom){
+        this(nom, 1200, 2022, 1, 1);
+    }
 
     //Getter
     public String dimeNombre(){
