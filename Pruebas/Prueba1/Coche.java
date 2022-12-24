@@ -16,7 +16,7 @@ public class Coche{
     private int pesoFinal;
     private boolean asientos, climatizador;
 
-    //Método constructor SIEMPRE TIENE QUE TENER EL MISMO NOMBRE QUE LA CLASE
+    //Método constructor SIEMPRE TIENE QUE TENER EL MISMO NOMBRE QUE LA CLASE, se encarga de darle un valor inicial a los atributos del Objeto
     public Coche(){
         ruedas = 4;
         largo = 2000;
