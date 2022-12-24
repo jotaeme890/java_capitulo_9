@@ -55,7 +55,7 @@ public class Coche{
     //Getter
     public String dimeAsientos(){
         //En este caso no se pone this. ya que no hay confusión de otro nombre de método igual en este métogo Getter
-        if(asientos == true){
+        if(asientos){
             return "Este vehículo tiene asientos de cuero";
         } 
         return "Este vehículo tiene asientos de serie";
@@ -72,7 +72,7 @@ public class Coche{
     }
     //Getter
     public String dimeClimatizador(){
-        if(climatizador == true){
+        if(climatizador){
             return "Este vehículo tiene climatizador";
         } 
         return "Este vehículo tiene aire acondicionado";
@@ -85,10 +85,10 @@ public class Coche{
 
         pesoFinal = pesoPlataforma + pesoCarroceria;
 
-        if(asientos == true){
+        if(asientos){
             pesoFinal += 50;
         }
-        if(climatizador == true){
+        if(climatizador){
             pesoFinal += 20;
         }
 
