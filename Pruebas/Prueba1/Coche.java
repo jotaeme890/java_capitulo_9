@@ -1,4 +1,4 @@
-//ESTA ES LA CLASE, VÍDEO 33
+//ESTA ES LA CLASE, VÍDEO 40
 
 package Pruebas.Prueba1;
 
