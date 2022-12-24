@@ -1,0 +1,3 @@
+Utilizar un array para guardar instancias y después mostrarlas de manera más sencilla.
+Pedir por parámetros los valores del constructor.
+Uso básico de la clase GregorianCalendar.
