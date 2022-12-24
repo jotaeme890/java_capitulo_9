@@ -5,18 +5,16 @@ public class Pruebas3 {
         Empleado empleado1 = new Empleado("Paco");
         Empleado empleado2 = new Empleado("Federico");
         Empleado empleado3 = new Empleado("Francisco");
+        Empleado empleado4 = new Empleado("Pepe");
 
         empleado1.estableceSeccion("RRHH");
         //empleado1.estableceNombre("Pedro");
-        System.out.println(empleado1.dimeDatos());
+        System.out.println(empleado1.dimeDatos() + "\n"+ 
+        empleado2.dimeDatos() + "\n"+ 
+        empleado3.dimeDatos() + "\n"+ 
+        empleado4.dimeDatos() + "\n"+ 
+        Empleado.dameIdSiguiente());
 
-        System.out.println();
-
-        System.out.println(empleado2.dimeDatos());
-
-        System.out.println();
-
-        System.out.println(empleado3.dimeDatos());
     }
 }
 
@@ -35,6 +33,10 @@ class Empleado{
         idSiguiente++;
     }
 
+    public static String dameIdSiguiente(){
+        return "El ID siguiente es " + idSiguiente;
+    }
+
     /* 
     ESTO SE PUEDE PONER YA QUE TENEMOS ESTA VARIABLE COMO UNA CONSTANTE
     public void estableceNombre(String nombre){
@@ -47,6 +49,6 @@ class Empleado{
     }
 
     public String dimeDatos(){
-        return nombre + ", tu su sección es: " + seccion + ". Y tú id es: " +id;
+        return nombre + ", tu sección es: " + seccion + ". Y tú id es: " + id;
     }
 }
