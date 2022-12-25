@@ -87,4 +87,25 @@ class Empleado{
     }
 }
 
+class Jefatura extends Empleado{
+
+    private double incentivo; 
+
+    public Jefatura(String nom, double sue, int agno, int mes, int dia){
+        super(nom,sue,agno,mes,dia);
+    }
+
+    public void estableceIncentivo(double b){
+        incentivo = b;
+    }
+
+    //No nos sirve dimeSueldo ya que el jefe tien la posibilidad de sumarle un incentivo, al contrario del Empleado
+    //Con este método machacamos el método dimeSueldo de la clase padre, ESTO SOLO SE HACE PARA LA CLASE JEFATURA
+    public double dimeSueldo(){
+        //Este dimeSueldo es de la clase padre
+        double sueldoJefe = super.dimeSueldo();
+        return sueldoJefe + incentivo;
+    }
+}
+
 
