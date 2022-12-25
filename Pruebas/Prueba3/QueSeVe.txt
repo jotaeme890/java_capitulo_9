@@ -1,0 +1,2 @@
+Vemos el concepto de una variable static con la palabra final.
+Y vemos el método static que hace que un atributo pertenezca a la clase y no al Objeto.
