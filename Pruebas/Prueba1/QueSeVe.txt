@@ -1,3 +1,5 @@
 En esta relación de ejercicios, hemos visto los principios de POO.
 Saber que son los métodoos Setter y Getter con su estructura.
 El uso de javax (para cuadros de texto), y a como instanciar objetos y llamarlos desde el Main.
+
+Principios de herencia
