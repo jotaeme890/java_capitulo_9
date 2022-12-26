@@ -2,4 +2,6 @@ Utilizar un array para guardar instancias y después mostrarlas de manera más s
 Pedir por parámetros los valores del constructor y hacer una sobrecarga a estos (Se sabe a cual de ellos va según los parámetros que le pasemos).
 Uso básico de la clase GregorianCalendar.
 
-Herencia algo más compleja
+Herencia algo más compleja.
+
+Polimorfismo básico.
