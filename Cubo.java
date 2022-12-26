@@ -6,31 +6,31 @@ public class Cubo {
         this.capacidad = capacidad;
     }
 
-    public int dimeCapacidad(){ 
-        return capacidad;
+    public int getCapacidad(){ 
+        return this.capacidad;
     }
 
-    public int dimeContenido(){ 
-        return contenido;
+    public int getContenido(){ 
+        return this.contenido;
     }
 
-    public void estableContenido(int litros){
-        contenido = litros;
+    public void setContenido(int litros){
+        this.contenido = litros;
     }
 
     //Setter para vaciar el contenido del cubo
     public void vaciaCubo(){
-        contenido = 0;
+        this.contenido = 0;
     }
 
     //Setter para llenar el contenido del cubo
     public void llenaCubo(){
-        contenido = capacidad;
+        this.contenido = this.capacidad;
     }
 
     //Pintamos el cubo
     public void pintaCubo(){
-        for(int nivel = this.capacidad ; nivel > 0; nivel++){
+        for(int nivel = this.capacidad ; nivel > 0; nivel--){
             if(this.contenido >= nivel){
                 System.out.println("#---#");
             } else{
@@ -42,11 +42,11 @@ public class Cubo {
 
     //Volcamos el cubo en otro
     public void VuelcaCubo(Cubo destino){
-        int libres = destino.dimeCapacidad() - destino.dimeContenido();
+        int libres = destino.getCapacidad() - destino.getContenido();
 
         if(libres > 0){
             if(this.contenido <= libres){
-                destino.estableContenido(destino.dimeContenido() + this.contenido);
+                destino.setContenido(destino.getContenido() + this.contenido);
                 this.vaciaCubo();
             }
         } else{
