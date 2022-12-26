@@ -21,20 +21,30 @@ public class UsoEmpleado {
         System.out.println("\nNombre: " + empleado3.dimeNombre() + "\nSueldo: " + empleado3.dimeSueldo() + "\nFecha de alta: " + empleado3.dimeAlta());
         */
 
+        Jefatura jefeRRHH = new Jefatura("Pedro Pica Piedras", 55000, 2022, 1, 22);
+
+        jefeRRHH.estableceIncentivo(2570);
+
         //Lo mismo pero con un array
-        Empleado[] empleados = new Empleado[4];
+        Empleado[] empleados = new Empleado[6];
 
         empleados[0] = new Empleado("Jotaeme", 1250, 2018,10,27);
         empleados [1] = new Empleado("Paco Pepe", 1750, 2015,1,31);
         empleados [2] = new Empleado("Federico", 2250, 2010,6,14);
         empleados [3] = new Empleado("Pepe Pérez");
 
-        empleados[0].aumentarSueldo(15);
-        empleados [1].aumentarSueldo(10);
-        empleados [2].aumentarSueldo(5);
+        // Polimorfismo, principio de sustitución (usar un ejemplo de la subclase cuando el programa espere uno de la superclase)
+        empleados[4] = jefeRRHH; 
+        empleados[5] = new Jefatura("Federica", 2800, 2022, 1, 22);
 
-        for (int i = 0; i < empleados.length; i++) {
-            System.out.println("\nNombre: " + empleados[i].dimeNombre() + "\nSueldo: " + empleados[i].dimeSueldo() + "\nFecha de alta: " + empleados[i].dimeAlta());
+        for(Empleado e: empleados){
+            e.aumentarSueldo(5);
+        }
+
+        //Aquí nos damos cuenta del polimorfirmo ya que e: es de tipo Empleado y cuando llega a los jefes se comporta con un tipo Jefatura, y por eso llama al dimeSueldo de Jefatura y no de Empleado, poniendole el incentivo,
+        // esto se hace mediante el enlazado dinámico que lo hacce de manera automática la JVM 
+        for (Empleado e: empleados) {
+            System.out.println("\nNombre: " +e.dimeNombre() + "\nSueldo: " + e.dimeSueldo() + "\nFecha de alta: " + e.dimeAlta());
         }
     }
 }
