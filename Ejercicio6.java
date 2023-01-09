@@ -5,5 +5,6 @@ public class Ejercicio6 {
         Tiempo t3 = new Tiempo(0, 35, 20);
 
         System.out.println(t1.suma(t3));
+        System.out.println(t1.resta(t2));
     }
 }
