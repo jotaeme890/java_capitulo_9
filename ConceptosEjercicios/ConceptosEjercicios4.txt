@@ -1,0 +1,5 @@
+- Jugador
+- Arbitro
+- Entrenador
+- Asistentes
+- Publico
