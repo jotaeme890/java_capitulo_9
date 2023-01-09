@@ -4,5 +4,5 @@ Atributos:
     - curso
     - direccion
     - curso
-
-Nombre sí sería un atributo, ya que es un concepto que comparten todos los alumnos 
+ 
+Nombre sí sería un atributo, ya que es un concepto que comparten todos los alumnos
