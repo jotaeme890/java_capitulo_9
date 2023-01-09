@@ -1,0 +1,12 @@
+Atributos:
+    - altura
+    - peso
+    - raza
+    - color
+    - sexo
+
+Métodos:
+    - corre()
+    - salta()
+    - come()
+    - relincha()
