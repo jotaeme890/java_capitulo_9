@@ -1,9 +1,5 @@
-persona:
-    - javier
-    - paula
-
 mineral:
-    -pirita
+    - pirita
     - cuarzo
     
 animal:
@@ -22,3 +18,10 @@ animal:
         - pluto
         - laika
         - ayudante_de_santa_claus
+    Persona:
+        - javier
+        - paula
+    Ave:
+        Pato:
+            - pato_lucas
+
