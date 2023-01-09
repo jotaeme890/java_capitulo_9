@@ -49,5 +49,6 @@ public class Ejercicio7 {
                 break;
             }
         } while (opcion != 3);
+        sc.close();
     }
 }
