@@ -1,0 +1,24 @@
+persona:
+    - javier
+    - paula
+
+mineral:
+    -pirita
+    - cuarzo
+    
+animal:
+    Gato:
+        - tom
+        - garfield
+        - silvestre
+    Caballo:
+        - rocinante
+        - bucefalo
+        - pegaso
+    Perro:
+        - goofy
+        - milu
+        - snoopy
+        - pluto
+        - laika
+        - ayudante_de_santa_claus
