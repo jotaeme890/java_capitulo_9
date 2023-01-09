@@ -1,0 +1,15 @@
+Atributos:
+- escudería
+- peso
+- altura
+- campeonatosGanados
+- nombre
+- paísOrigen
+
+
+Instancias:
+- charlesLeclerc
+- fernandoAlonso
+- carlosSainz
+
+
