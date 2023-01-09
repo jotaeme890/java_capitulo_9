@@ -1,0 +1,10 @@
+atributos:
+    - tamaño
+    - direccion
+    - terreno
+    - tipo
+
+subclases:
+    - cocina
+    - cuartoBaño
+    - terraza
