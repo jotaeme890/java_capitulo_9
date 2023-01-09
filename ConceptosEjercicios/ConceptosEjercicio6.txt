@@ -1,0 +1,8 @@
+Atributos:
+    - nombre
+    - edad
+    - curso
+    - direccion
+    - curso
+
+Nombre sí sería un atributo, ya que es un concepto que comparten todos los alumnos 
