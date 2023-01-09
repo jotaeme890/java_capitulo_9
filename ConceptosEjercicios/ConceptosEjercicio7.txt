@@ -1,0 +1,12 @@
+Atributos:
+    - colorFondo
+    - titulo
+    - posicion 
+
+Métodos:
+    - cierra()
+    - abre()
+    - retrocede()
+    - avanza()
+    - minimixa()
+    - maximiza()
