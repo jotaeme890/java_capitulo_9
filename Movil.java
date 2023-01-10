@@ -1,5 +1,4 @@
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
 
 public class Movil extends Terminal{
     private String tarifa;
