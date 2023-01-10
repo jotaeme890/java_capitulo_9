@@ -10,6 +10,8 @@ public class Pinguino extends Ave{
     public void nada(){
         System.out.println("Estoy nadandooooo");
     }
+    
+    @Override
     public void vuela(){
         System.out.println("Soy pinguino no puedo volar");
     }
