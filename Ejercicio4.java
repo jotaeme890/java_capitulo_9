@@ -1,10 +1,14 @@
 public class Ejercicio4 {
     public static void main(String[] args) {
-        Fraccion fraccion = new Fraccion(4, 2);
-        System.out.println(fraccion.invierte());
-
-        Fraccion fraccion2 = new Fraccion(16, 2);
-        System.out.println(fraccion.multiplica(fraccion2));
-        System.out.println(fraccion2.simplifica());
+        Fraccion f1 = new Fraccion(-7,8);
+        System.out.println(f1 + " x 5 = "+ f1.multiplica(5));
+        System.out.println(f1 + " ^-1 = " + f1.invierte());
+        
+        Fraccion f2 = new Fraccion(3, 5);
+        System.out.println(f1 + " x " + f2 + " = " + f1.multiplica(f2));
+        System.out.println(f1 + " : " + f2 + " = " + f1.divide(f2));
+            
+        Fraccion f3 = new Fraccion(910, -350);
+        System.out.println(f3 + " = " + f3.simplifica());
     }
 }
