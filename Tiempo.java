@@ -1,9 +1,31 @@
-public class Tiempo {
+public class Tiempo implements Cloneable{
     private int s;
 
     public Tiempo(int h, int m, int s){
         //Pasamos todo a segundos
         this.s = (h*3600) + (m*60) + s;
+    }
+
+    public int getHoras(){
+        return this.s/3600;
+    }
+
+    public int getMin(){
+        return this.s%3600/60;
+    }
+
+    private int getSegundos(){
+        return this.s%3600%60;
+    }
+
+    @Override
+    public Tiempo clone(){
+        return new Tiempo(this.getHoras(), this.getMin(), this.getSegundos());
+    }
+
+    public Tiempo(Tiempo t){
+        //Pasamos todo a segundos
+        this(t.getHoras(),t.getMin(),t.getSegundos());
     }
 
     public Tiempo(int s){
@@ -22,10 +44,6 @@ public class Tiempo {
             return "No se puede tener una hora en negativo";
         }
             return hora + "h " + min + "min " + segundos + "s"; 
-    }
-
-    private int getSegundos(){
-        return this.s;
     }
 
     public Tiempo suma(Tiempo t){
