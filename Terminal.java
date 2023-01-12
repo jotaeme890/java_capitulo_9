@@ -10,8 +10,16 @@ public class Terminal {
         return numero;
     }
     
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+    
     public int getTiempoTot() {
         return tiempoTot;
+    }
+    
+    public void setTiempoTot(int tiempoTot) {
+        this.tiempoTot = tiempoTot;
     }
 
     public void llama(Terminal movil, int tiempo){
