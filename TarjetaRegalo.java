@@ -22,7 +22,7 @@ public class TarjetaRegalo {
 
     public void gasta(double d){
         if(this.saldo < d){
-            System.out.println("No tiene suficiente saldo para gastar " + d + "euros");
+            System.out.println("No tiene suficiente saldo para gastar " + d + " euros");
         } else{
             saldo -= d;
         }
@@ -31,7 +31,7 @@ public class TarjetaRegalo {
     @Override
     public String toString(){
         DecimalFormat dosDecimales = new DecimalFormat("0.00");
-        return "Tarjeta nº " + numero + " - Saldo " + dosDecimales.format(saldo) + "euros";
+        return "Tarjeta nº " + numero + " - Saldo " + dosDecimales.format(saldo) + " euros";
     }
 
     TarjetaRegalo fusionaCon(TarjetaRegalo otra){
