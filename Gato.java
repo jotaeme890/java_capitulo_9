@@ -7,6 +7,12 @@ public class Gato extends Mamifero{
         super(Sexo.MACHO);
     }
 
+    public Gato(String nombre, String raza, String color){
+        this.color = color;
+        this.raza = raza;
+        this.nombre = nombre;
+    }
+
     public void setColor(String color){
         this.color = color;
     }
