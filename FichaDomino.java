@@ -7,6 +7,19 @@ public class FichaDomino {
         this.der = der;
     }
 
+    //Ejercicio 15
+    public FichaDomino() {
+        this.izq = (int) (Math.random() * 7);
+        this.der = (int) (Math.random() * 7);
+    }
+
+        /*Nos devuelve true o false si entra o no en la fila, es decirr, el lado derecho de la ficha es igual al del izquierdo de la que se pasa como parámetro*/
+    boolean encajaEnFila(FichaDomino ficha) {
+        return der == ficha.izq;
+    }
+    /////////////////////////////////////////////////
+        
+
     public int getIzq (){
         return this.izq;
     }
