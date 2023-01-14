@@ -142,6 +142,6 @@ public class EjercicioArray3 {
             }
 
         } while (opcion != 5);
-
-    }
+        sc.close();
+    }   
 }
