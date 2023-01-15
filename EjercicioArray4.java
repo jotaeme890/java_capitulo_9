@@ -51,7 +51,7 @@ public class EjercicioArray4 {
 
                     while (libre < N && !d[libre].getCodigo().equals("LIBRE")) {
                         libre++;
-                    }
+                    } 
 
                     if(libre == N){
                         System.out.println("Lo siento, no hay hueco en la BBDD, borra algún elemento");
