@@ -11,7 +11,7 @@ public class CuentaCorriente {
         this.saldo = saldo;
     }
 
-    public void numeroCuenta(){
+    private void numeroCuenta(){
         for (int i = 0; i < 10; i++) {
             numeroC += (int) (Math.random()*10); 
         }
