@@ -15,7 +15,7 @@ public class Tiempo implements Cloneable{
     }
 
     private int getSegundos(){
-        return this.s%3600%60;
+        return this.s;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Tiempo implements Cloneable{
         segundos -= min*60;
 
         if(this.s < 0){
-            return "No se puede tener una hora en negativo";
+            return "-(" + (-hora) + "h " + (-min) + "min " + (-segundos) + "s)";
         }
             return hora + "h " + min + "min " + segundos + "s"; 
     }
