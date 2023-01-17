@@ -67,6 +67,9 @@ public class EjercicioArray4 {
                                     existe=true;
                                 }
                             }
+                            if(existe){
+                                System.out.print("Lo siento, ese código ya existe, dime otro: ");
+                            }
                         }
                     }
                     d[libre].setCodigo(codigoIntro);
