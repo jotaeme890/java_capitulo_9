@@ -62,7 +62,7 @@ public class EjercicioArray5 {
 
                     hueco = 0;
                     //Para buscar el primer hueco libre
-                    while(!a[hueco].getCodigo().equals("LIBRE") && hueco < N){
+                    while( hueco < N && !a[hueco].getCodigo().equals("LIBRE")){
                         hueco++;
                     }
 
@@ -118,7 +118,7 @@ public class EjercicioArray5 {
                     do {
                         hueco++;
                         //Como tenemos que borrar, tenemos que ver que el código sea diferente al código que buscamos, ya que cuando sea el mismo es el que tenemos que borrar
-                    } while (!a[hueco].getCodigo().equals(codigoIntro) && hueco<N);
+                    } while ( hueco<N &&!a[hueco].getCodigo().equals(codigoIntro));
 
                     if (hueco == N) {
                         System.out.println("Lo siento, este código no existe en la BBDD");
