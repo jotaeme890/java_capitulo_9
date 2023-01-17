@@ -98,7 +98,7 @@ public class EjercicioArray4 {
                         if (i < N) {
                             codigo = d[i].getCodigo();
                         }
-                    } while (!(codigo.equals(codigoIntro)) && (i < N));
+                    } while ( (i < N) && !(codigo.equals(codigoIntro)));
                     if (i == N) {
                         System.out.println("Lo siento, el código introducido no existe.");
                     } else {
